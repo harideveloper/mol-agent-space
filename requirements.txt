@@ -1,0 +1,19 @@
+# Core agent framework
+smolagents>=1.0.0
+
+# LLM / model inference
+transformers>=4.40.0
+huggingface_hub>=0.22.0
+torch>=2.1.0
+accelerate>=0.28.0
+
+# Molecular cheminformatics
+rdkit>=2023.9.5
+
+# HTTP / APIs
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# UI
+gradio>=4.36.0
+
