@@ -584,7 +584,11 @@ def stream_answer(
 # ── Interface ───────────────────────────────────────────────────────────
 
 def build_interface() -> gr.Blocks:
-    theme = MoleculeIQTheme()
+    try:
+        theme = MoleculeIQTheme()
+    except Exception as exc:
+        logger.warning("Custom theme failed (%s) — using built-in Soft theme", exc)
+        theme = gr.themes.Soft()
 
     with gr.Blocks(title="MoleculeIQ", theme=theme, css=CSS) as demo:
 

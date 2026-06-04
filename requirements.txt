@@ -15,5 +15,8 @@ requests>=2.31.0
 python-dotenv>=1.0.0
 
 # UI
-gradio>=4.36.0
+gradio>=5.0.0
+
+# Python 3.13 compatibility (audioop removed from stdlib)
+pyaudioop>=0.0.2
 
