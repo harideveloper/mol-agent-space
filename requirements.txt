@@ -14,3 +14,6 @@ rdkit>=2023.9.5
 requests>=2.31.0
 python-dotenv>=1.0.0
 
+# Python 3.13 compatibility — backports removed audioop module needed by pydub/gradio
+audioop-lts>=0.2.1
+
